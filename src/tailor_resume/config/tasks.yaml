@@ -1,0 +1,32 @@
+extract_job_requirements_task:
+  description: >
+    Extract key requirements and responsibilities from the job posting.
+    Focus on identifying the skills, experiences, and qualifications needed for
+    the job.
+
+    Original Job Posting: {job_posting}
+  expected_output: >
+    A summary of the job requirements including key skills, experiences, and qualifications.
+
+tailor_resume_task:
+  description: >
+    Adjust the resume content to highlight the most relevant skills and
+    experiences for the job posting.
+    Frame the content to better fit the job requirements without misrepresenting
+    the candidate's abilities.
+
+    Original Job Posting: {job_posting}
+
+    Job fiter score: {fit_score}
+
+    Fit score explanation: {fit_score_explanation}
+
+    Original Resume:
+
+    {resume}
+  expected_output: >
+    A tailor-made resume in markdown format that highlights the most relevant
+    skills, experiences, and qualifications for the job posting, making sure
+    never fake this infromations, it should only include things you know the person
+    is good at and can do.
+    we are optmizeing for the person to get an interview. do not include ```

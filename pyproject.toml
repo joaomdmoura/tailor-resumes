@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "tailor_resume"
+version = "0.1.0"
+description = "tailor-resume using crewAI"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = { extras = ["tools"], version = "^0.35.8" }
+
+[tool.poetry.scripts]
+tailor_resume = "tailor_resume.main:run"
+train = "tailor_resume.main:train"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
