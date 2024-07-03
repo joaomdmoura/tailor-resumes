@@ -739,19 +739,19 @@ files = [
 
 [[package]]
 name = "crewai"
-version = "0.35.8"
+version = "0.35.7"
 description = "Cutting-edge framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks."
 optional = false
 python-versions = "<=3.13,>=3.10"
 files = [
-    {file = "crewai-0.35.8-py3-none-any.whl", hash = "sha256:3e2d64591d6afd95bf4529aac06127e258531511aa37bffed5a7cab71a9c958a"},
-    {file = "crewai-0.35.8.tar.gz", hash = "sha256:981236f35e250eba26bff393a711bb55afc7173fbd500df9b620705bba69b3a6"},
+    {file = "crewai-0.35.7-py3-none-any.whl", hash = "sha256:f2b901adf1513f48527e7e0e5635150a0898a8dab3cd9a948de791047b4dfb8a"},
+    {file = "crewai-0.35.7.tar.gz", hash = "sha256:05f137589387c55738ccd702b8451f84c1fac0486aca8e92ed7389cf5125f951"},
 ]
 
 [package.dependencies]
 appdirs = ">=1.4.4,<2.0.0"
 click = ">=8.1.7,<9.0.0"
-crewai-tools = {version = ">=0.4.6,<0.5.0", optional = true, markers = "extra == \"tools\""}
+crewai-tools = {version = ">=0.4.5,<0.5.0", optional = true, markers = "extra == \"tools\""}
 embedchain = ">=0.1.113,<0.2.0"
 instructor = "1.3.3"
 jsonref = ">=1.1.0,<2.0.0"
@@ -765,7 +765,7 @@ python-dotenv = ">=1.0.0,<2.0.0"
 regex = ">=2023.12.25,<2024.0.0"
 
 [package.extras]
-tools = ["crewai-tools (>=0.4.6,<0.5.0)"]
+tools = ["crewai-tools (>=0.4.5,<0.5.0)"]
 
 [[package]]
 name = "crewai-tools"
@@ -5434,4 +5434,4 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<=3.13"
-content-hash = "b21593b18cee87be454507bbd486c3b122ad8332c5c717e9199430b26f01b408"
+content-hash = "fba0b1c33ca4cbb3db5ee1b41adf0f584260042a679727690063b3d992ab1e7b"
